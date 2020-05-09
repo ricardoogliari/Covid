@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listCountriesFragment">
+
+    <fragment
+        android:id="@+id/listCountriesFragment"
+        android:name="com.vogella.android.covid.ui.listcountries.ListCountriesFragment"
+        android:label="ListCountriesFragment" >
+        <action
+            android:id="@+id/select_country_action"
+            app:destination="@id/detailCountryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCountryFragment"
+        android:name="com.vogella.android.covid.ui.listcountries.DetailCountryFragment"
+        android:label="fragment_detail_country"
+        tools:layout="@layout/fragment_detail_country" />
+</navigation>

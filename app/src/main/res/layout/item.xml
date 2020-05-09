@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vogella.android.covid.ui.listcountries.ListCountriesViewModel"/>
+        <variable
+            name="country"
+            type="com.vogella.android.covid.model.Country" />
+    </data>
+    <TextView
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/tvCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@{country.country}"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:text="Morris"/>
+</layout>
